@@ -26,9 +26,6 @@ Este plugin permite que você "siga" outros usuários em canais de voz no Discor
 | **Voltar automaticamente** | Se você for movido para outro canal, volta automaticamente para o canal do usuário seguido |
 | **Tentar entrar quando o canal não estiver cheio** | Se o canal estiver cheio, tenta entrar quando houver espaço |
 
-## 📸 Screenshots
-<!-- Adicione screenshots aqui quando disponíveis -->
-
 ## 🛠️ Instalação
 1. Certifique-se de ter o [Vencord](https://github.com/Vendicated/Vencord) instalado
 2. Coloque o arquivo `index.tsx` na pasta de plugins do Vencord
