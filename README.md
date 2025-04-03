@@ -1,10 +1,5 @@
 # Plugin SeguirUsuário para Vencord
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Discord-Vencord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord Vencord"/>
-  <img src="https://img.shields.io/badge/Licença-GPL--3.0-green?style=for-the-badge" alt="Licença GPL-3.0"/>
-</p>
-
 ## 📝 Descrição
 Este plugin permite que você "siga" outros usuários em canais de voz no Discord. Quando você segue um usuário, o plugin automaticamente o move para o mesmo canal de voz que o usuário seguido quando ele muda de canal.
 
