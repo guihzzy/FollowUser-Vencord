@@ -31,8 +31,9 @@ Este plugin permite que você "siga" outros usuários em canais de voz no Discor
 2. Coloque o arquivo `index.tsx` na pasta de plugins do Vencord
 3. Ative o plugin nas configurações do Vencord
 
-## 👨‍💻 Autor
-Desenvolvido por Guih
-
 ## 📄 Licença
 Este plugin é parte do Vencord e está licenciado sob GPL-3.0-or-later.
+
+---
+
+Criado com ❤️ por **guihzzy**
