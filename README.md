@@ -27,14 +27,82 @@ Este plugin permite que você "siga" outros usuários em canais de voz no Discor
 | **Tentar entrar quando o canal não estiver cheio** | Se o canal estiver cheio, tenta entrar quando houver espaço |
 
 ## 🛠️ Instalação
-1. Certifique-se de ter o [Vencord](https://github.com/Vendicated/Vencord) instalado
-2. Crie uma pasta chamada `FollowUser`
-3. Coloque o arquivo `index.tsx` dentro da pasta criada `FollowUser` na pasta de plugins do Vencord
-4. Ative o plugin nas configurações do Vencord
+### Instalando o Vencord
+Se você ainda não tem o Vencord instalado, siga estas etapas:
+1. Instale as dependências necessárias:
+   - [Baixe e instale o Git](https://git-scm.com/downloads)
+   - [Baixe e instale o Node.js](https://nodejs.org/)
+   - [Baixe e instale o pnpm](https://pnpm.io/installation)
+   - Certifique-se de que todos estão adicionados ao PATH do sistema.
 
-## 📄 Licença
+2. Para verificar a instalação, execute os seguintes comandos no terminal:
+   ```sh
+   git --version
+   node --version
+   pnpm --version
+   ```
+   Se todos retornarem uma versão válida, a instalação foi bem-sucedida.
+
+3. Clone o repositório do Vencord:
+   ```sh
+   git clone https://github.com/Vendicated/Vencord
+   ```
+
+4. Acesse a pasta clonada:
+   ```sh
+   cd Vencord
+   ```
+
+5. Instale as dependências:
+   ```sh
+   pnpm install --frozen-lockfile
+   ```
+
+6. Compile o Vencord:
+   ```sh
+   pnpm build
+   ```
+
+7. Injete o Vencord no Discord:
+   ```sh
+   pnpm inject
+   ```
+
+### Instalando o Plugin FollowUser
+1. **Abra a pasta de plugins do Vencord:**
+   - No Discord, vá para as configurações do Vencord
+   - Clique em **Plugins** e depois em **Abrir pasta de plugins**
+
+2. **Baixe o código do plugin:**
+   - Crie uma pasta chamada `FollowUser`
+   - Coloque o arquivo `index.tsx` dentro da pasta `FollowUser`
+
+3. **Ative o plugin:**
+   - Volte para as configurações do Vencord
+   - Na aba **Plugins**, ative o **FollowUser**
+
+### Instalando Plugins Personalizados
+Se quiser adicionar plugins personalizados ao Vencord:
+1. Acesse a pasta do Vencord e crie uma nova pasta para plugins personalizados:
+   ```sh
+   cd Vencord/src
+   mkdir userplugins
+   ```
+
+2. Adicione seu plugin dentro da pasta `userplugins`. Ele pode ser um arquivo único (`meuPlugin.tsx`) ou uma pasta com um arquivo `index.tsx`.
+   ```sh
+   mv meuPlugin.tsx Vencord/src/userplugins/
+   ```
+
+3. Para aplicar as mudanças, reconstrua o Vencord:
+   ```sh
+   pnpm build
+   ```
+
+## 📝 Licença
 Este plugin é parte do Vencord e está licenciado sob GPL-3.0-or-later.
 
 ---
 
 Criado com ❤️ por **guihzzy**
+
