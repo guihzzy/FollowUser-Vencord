@@ -27,17 +27,24 @@ Este plugin permite que você "siga" outros usuários em canais de voz no Discor
 | **Tentar entrar quando o canal não estiver cheio** | Se o canal estiver cheio, tenta entrar quando houver espaço |
 
 ## 🛠️ Instalação
-### Instalando o Vencord
+### Instalando o Vencord pelo CMD
 ⚠️ **IMPORTANTE:** O Vencord deve ser instalado manualmente na pasta `Documentos`. Não use a versão instalada por executável!
 
 Se você ainda não tem o Vencord instalado, siga estas etapas:
-1. Instale as dependências necessárias:
-   - [Baixe e instale o Git](https://git-scm.com/downloads)
-   - [Baixe e instale o Node.js](https://nodejs.org/)
-   - [Baixe e instale o pnpm](https://pnpm.io/installation)
-   - Certifique-se de que todos estão adicionados ao PATH do sistema.
 
-2. Para verificar a instalação, execute os seguintes comandos no terminal:
+1. **Abra o CMD como Administrador**
+   - Pressione `Win + R`, digite `cmd` e pressione `Enter`
+   - Clique com o botão direito no `Prompt de Comando` e selecione `Executar como Administrador`
+
+2. **Instale as dependências necessárias:**
+   ```sh
+   winget install --id Git.Git -e --source winget
+   winget install --id OpenJS.NodeJS.LTS -e --source winget
+   npm install -g pnpm
+   ```
+   Certifique-se de que todos estão adicionados ao PATH do sistema.
+
+3. **Verifique a instalação:**
    ```sh
    git --version
    node --version
@@ -45,28 +52,28 @@ Se você ainda não tem o Vencord instalado, siga estas etapas:
    ```
    Se todos retornarem uma versão válida, a instalação foi bem-sucedida.
 
-3. Clone o repositório do Vencord dentro da pasta `Documentos`:
+4. **Navegue até a pasta `Documentos` e clone o repositório do Vencord:**
    ```sh
-   cd Documentos
+   cd %USERPROFILE%\Documents
    git clone https://github.com/Vendicated/Vencord
    ```
 
-4. Acesse a pasta clonada:
+5. **Acesse a pasta clonada:**
    ```sh
    cd Vencord
    ```
 
-5. Instale as dependências:
+6. **Instale as dependências do Vencord:**
    ```sh
    pnpm install --frozen-lockfile
    ```
 
-6. Compile o Vencord:
+7. **Compile o Vencord:**
    ```sh
    pnpm build
    ```
 
-7. Injete o Vencord no Discord:
+8. **Injete o Vencord no Discord:**
    ```sh
    pnpm inject
    ```
@@ -86,18 +93,18 @@ Se você ainda não tem o Vencord instalado, siga estas etapas:
 
 ### Instalando Plugins Personalizados
 Se quiser adicionar plugins personalizados ao Vencord:
-1. Acesse a pasta do Vencord e crie uma nova pasta para plugins personalizados:
+1. **Acesse a pasta do Vencord e crie uma nova pasta para plugins personalizados:**
    ```sh
-   cd Vencord/src
+   cd %USERPROFILE%\Documents\Vencord\src
    mkdir userplugins
    ```
 
-2. Adicione seu plugin dentro da pasta `userplugins`. Ele pode ser um arquivo único (`meuPlugin.tsx`) ou uma pasta com um arquivo `index.tsx`.
+2. **Adicione seu plugin dentro da pasta `userplugins`. Ele pode ser um arquivo único (`meuPlugin.tsx`) ou uma pasta com um arquivo `index.tsx`.**
    ```sh
-   mv meuPlugin.tsx Vencord/src/userplugins/
+   move meuPlugin.tsx %USERPROFILE%\Documents\Vencord\src\userplugins\
    ```
 
-3. Para aplicar as mudanças, reconstrua o Vencord:
+3. **Para aplicar as mudanças, reconstrua o Vencord:**
    ```sh
    pnpm build
    ```
