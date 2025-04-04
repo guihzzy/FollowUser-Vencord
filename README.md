@@ -28,6 +28,8 @@ Este plugin permite que você "siga" outros usuários em canais de voz no Discor
 
 ## 🛠️ Instalação
 ### Instalando o Vencord
+⚠️ **IMPORTANTE:** O Vencord deve ser instalado manualmente na pasta `Documentos`. Não use a versão instalada por executável!
+
 Se você ainda não tem o Vencord instalado, siga estas etapas:
 1. Instale as dependências necessárias:
    - [Baixe e instale o Git](https://git-scm.com/downloads)
@@ -43,8 +45,9 @@ Se você ainda não tem o Vencord instalado, siga estas etapas:
    ```
    Se todos retornarem uma versão válida, a instalação foi bem-sucedida.
 
-3. Clone o repositório do Vencord:
+3. Clone o repositório do Vencord dentro da pasta `Documentos`:
    ```sh
+   cd Documentos
    git clone https://github.com/Vendicated/Vencord
    ```
 
