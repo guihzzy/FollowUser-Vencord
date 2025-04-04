@@ -79,35 +79,15 @@ Se você ainda não tem o Vencord instalado, siga estas etapas:
    ```
 
 ### Instalando o Plugin FollowUser
-1. **Abra a pasta de plugins do Vencord:**
-   - No Discord, vá para as configurações do Vencord
-   - Clique em **Plugins** e depois em **Abrir pasta de plugins**
-
-2. **Baixe o código do plugin:**
-   - Crie uma pasta chamada `FollowUser`
-   - Coloque o arquivo `index.tsx` dentro da pasta `FollowUser`
-
-3. **Ative o plugin:**
-   - Volte para as configurações do Vencord
-   - Na aba **Plugins**, ative o **FollowUser**
-
-### Instalando Plugins Personalizados
-Se quiser adicionar plugins personalizados ao Vencord:
-1. **Acesse a pasta do Vencord e crie uma nova pasta para plugins personalizados:**
-   ```sh
-   cd %USERPROFILE%\Documents\Vencord\src
-   mkdir userplugins
-   ```
-
-2. **Adicione seu plugin dentro da pasta `userplugins`. Ele pode ser um arquivo único (`meuPlugin.tsx`) ou uma pasta com um arquivo `index.tsx`.**
-   ```sh
-   move meuPlugin.tsx %USERPROFILE%\Documents\Vencord\src\userplugins\
-   ```
-
-3. **Para aplicar as mudanças, reconstrua o Vencord:**
+#### Adicionando o Plugin
+1. **Abra a pasta do Vencord no seu explorador de arquivos** e navegue até `src/plugins`.
+2. **Crie uma pasta chamada `FollowUser`, caso ela não exista**.
+3. **Copie os arquivos do plugin para dentro da pasta `FollowUser`**.
+4. **Recompile o Vencord para aplicar as mudanças:**
    ```sh
    pnpm build
    ```
+5. **Ative o plugin nas configurações do Vencord** dentro do Discord.
 
 ## 📝 Licença
 Este plugin é parte do Vencord e está licenciado sob GPL-3.0-or-later.
